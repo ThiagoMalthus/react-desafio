@@ -62,10 +62,6 @@
   height: 100px;
 }
 
-.card:hover .cardImg{
-  filter:brightness(1.2);
-}
-
 .card:hover{
   font-weight: 500;
   background-color: #EEE;
@@ -83,4 +79,51 @@
 
 .curtida:hover{
   color: #A22;
+}
+
+.descricaoTopo{
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.curtidaDescricao{
+  position: absolute;
+  right: 5%;
+  bottom: -19px;
+  color: white;
+  background-color: #115;
+  width: 45px;
+  height: 45px;
+  padding: 1px 13px 13px 13px;
+  border-radius: 50px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+  cursor:pointer;
+}
+
+.curtidaDescricao:hover{
+  color:#115;
+  background-color: white;
+  
+}
+
+.descricaoTitulo{
+  margin-top: -70px;
+    color: white;
+    background: rgb(36,36,36);
+    background: linear-gradient(0deg, rgba(20,20,20,0.7) 0%, rgba(255,255,255,0) 100%);
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.descricaoConteudo{
+  margin-top:15px
+}
+
+@media (max-width: 600px) {
+  .descricaoTopo{
+    height: 300px;
+  }
 }
