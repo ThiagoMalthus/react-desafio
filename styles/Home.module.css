@@ -21,3 +21,16 @@
   margin:0px;
   padding:0px;
 }
+
+.lista {
+  padding: 0px 0px 0px 30px;
+  margin-top:20px
+}
+
+.categoria{
+  margin-top:15px;
+}
+
+.categoria div{
+  width:100%
+}

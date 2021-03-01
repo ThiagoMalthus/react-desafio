@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import axios from 'axios';
 import NavBar from '../src/componentes/navbar'
+import List from '../src/componentes/list'
 
 export default function Home({dados}) {
   return (
@@ -12,7 +13,7 @@ export default function Home({dados}) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
       <NavBar tipo="principal"/>
-      {console.log(dados)}
+      <List dados={dados}/>
     </>
   )
 }
