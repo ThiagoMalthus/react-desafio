@@ -5,7 +5,6 @@ import styles from '../../styles/Home.module.css'
 import Card from './card'
 
 const List = ({dados}) => {
-    console.log(dados);
 
     const categorias = [];
 
