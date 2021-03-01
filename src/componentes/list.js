@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import styles from '../../styles/Home.module.css'
+import Card from './card'
 
 const List = ({dados}) => {
     console.log(dados);
@@ -17,7 +18,8 @@ const List = ({dados}) => {
 
   return (
     <>
-    <Container className={styles.lista}>
+    <Container>
+        <div className={styles.lista}>
         {categorias.map(
                 categoria => (
                     <Row key={categoria} className={styles.categoria}>
@@ -29,12 +31,13 @@ const List = ({dados}) => {
                         <Row>
                         {dados.map(dado=>(
                                dado.category.name == categoria &&
-                               <div>{dado.content.name}</div>
+                               <Card artigo={dado.content} key={dado.content.id}/>
                         ))}
                         </Row>
                     </Row>
                 )
             )}
+        </div>
     </Container>
     </>
     )
